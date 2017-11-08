@@ -1,7 +1,7 @@
 <div class="comment-container">
   <div class="name">{{ comment.name }}</div>
   <div class="comment">{{ comment.text }}</div>
-  <div class="reply" (click)="showReplyForm = !showReplyForm">reply</div>
+  <div class="reply" (click)="showReplyForm = !showReplyForm">პასუხი</div>
   <div class="reply-form-container" *ngIf="showReplyForm">
     <app-comment-form (commentEvent)="replyAdded($event)"></app-comment-form>
   </div>
@@ -9,6 +9,7 @@
     <div class="comment-container" *ngFor="let reply of comment.replies;">
       <div class="name">{{ reply.name }}</div>
       <div class="comment">{{ reply.text }}</div>
+        <hr>
     </div>
   </div>
 </div>
