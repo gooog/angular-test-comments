@@ -9,7 +9,7 @@
 }
 
 .comment-container {
-
+    margin-top: 10px;
 }
 
 .reply {
@@ -28,4 +28,13 @@
     padding: 10px;
     margin-top: 10px;
     border-radius: 10px;
+}
+
+.reply-form-container {
+    width: 50%;
+    background: #f7f7c6;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: 1px solid #d4d4d4;
 }
