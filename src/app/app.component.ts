@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {CommentService} from './comment.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  comments: any;
+
+  constructor(private commentService: CommentService) {
+    this.comments = this.commentService.comments;
+  }
+
+  addComment(comment) {
+    this.commentService.addComment(comment);
+  }
+
 }
+

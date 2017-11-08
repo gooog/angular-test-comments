@@ -1,0 +1,31 @@
+.name {
+    font-size: 12px;
+    font-weight: bold;
+    color: maroon;
+}
+
+.comment {
+    font-size: 12px;
+}
+
+.comment-container {
+
+}
+
+.reply {
+    color: darkblue;
+    font-size: 12px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.reply:hover {
+    text-decoration: underline;
+}
+
+.sub-comments {
+    background: #f1efef;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
